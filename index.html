@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Juego de Memoria</title>
+    <link rel="stylesheet" href="estilos.css">
+    <script src="index.js" defer></script>
+</head>
+<body>
+    <h2>📝 Juego de Memoria 📝</h2>
+    <div id="contador">Clicks: 0</div>
+
+    <div id="juego">
+        <table>
+            <tr>
+                <td><div id="0" class="card" onclick="girarCarta(this)">
+                    <div class="front">?</div>
+                    <div class="back"><img src="" alt="card"></div>
+                </div></td>
+                <td><div id="1" class="card" onclick="girarCarta(this)">
+                    <div class="front">?</div>
+                    <div class="back"><img src="" alt="card"></div>
+                </div></td>
+                <td><div id="2" class="card" onclick="girarCarta(this)">
+                    <div class="front">?</div>
+                    <div class="back"><img src="" alt="card"></div>
+                </div></td>
+                <td><div id="3" class="card" onclick="girarCarta(this)">
+                    <div class="front">?</div>
+                    <div class="back"><img src="" alt="card"></div>
+                </div></td>
+            </tr>
+            <tr>
+                <td><div id="4" class="card" onclick="girarCarta(this)">
+                    <div class="front">?</div>
+                    <div class="back"><img src="" alt="card"></div>
+                </div></td>
+                <td><div id="5" class="card" onclick="girarCarta(this)">
+                    <div class="front">?</div>
+                    <div class="back"><img src="" alt="card"></div>
+                </div></td>
+                <td><div id="6" class="card" onclick="girarCarta(this)">
+                    <div class="front">?</div>
+                    <div class="back"><img src="" alt="card"></div>
+                </div></td>
+                <td><div id="7" class="card" onclick="girarCarta(this)">
+                    <div class="front">?</div>
+                    <div class="back"><img src="" alt="card"></div>
+                </div></td>
+            </tr>
+            <tr>
+                <td><div id="8" class="card" onclick="girarCarta(this)">
+                    <div class="front">?</div>
+                    <div class="back"><img src="" alt="card"></div>
+                </div></td>
+                <td><div id="9" class="card" onclick="girarCarta(this)">
+                    <div class="front">?</div>
+                    <div class="back"><img src="" alt="card"></div>
+                </div></td>
+                <td><div id="10" class="card" onclick="girarCarta(this)">
+                    <div class="front">?</div>
+                    <div class="back"><img src="" alt="card"></div>
+                </div></td>
+                <td><div id="11" class="card" onclick="girarCarta(this)">
+                    <div class="front">?</div>
+                    <div class="back"><img src="" alt="card"></div>
+                </div></td>
+            </tr>
+            <tr>
+                <td><div id="12" class="card" onclick="girarCarta(this)">
+                    <div class="front">?</div>
+                    <div class="back"><img src="" alt="card"></div>
+                </div></td>
+                <td><div id="13" class="card" onclick="girarCarta(this)">
+                    <div class="front">?</div>
+                    <div class="back"><img src="" alt="card"></div>
+                </div></td>
+                <td><div id="14" class="card" onclick="girarCarta(this)">
+                    <div class="front">?</div>
+                    <div class="back"><img src="" alt="card"></div>
+                </div></td>
+                <td><div id="15" class="card" onclick="girarCarta(this)">
+                    <div class="front">?</div>
+                    <div class="back"><img src="" alt="card"></div>
+                </div></td>
+            </tr>
+        </table>
+    </div>
+
+    <template id="juegoTemplate">
+        <table>
+            <tr>
+                <td><div id="0" class="card" onclick="girarCarta(this)">
+                    <div class="front">?</div>
+                    <div class="back"><img src="" alt="card"></div>
+                </div></td>
+                <td><div id="1" class="card" onclick="girarCarta(this)">
+                    <div class="front">?</div>
+                    <div class="back"><img src="" alt="card"></div>
+                </div></td>
+                <td><div id="2" class="card" onclick="girarCarta(this)">
+                    <div class="front">?</div>
+                    <div class="back"><img src="" alt="card"></div>
+                </div></td>
+                <td><div id="3" class="card" onclick="girarCarta(this)">
+                    <div class="front">?</div>
+                    <div class="back"><img src="" alt="card"></div>
+                </div></td>
+            </tr>
+            <tr>
+                <td><div id="4" class="card" onclick="girarCarta(this)">
+                    <div class="front">?</div>
+                    <div class="back"><img src="" alt="card"></div>
+                </div></td>
+                <td><div id="5" class="card" onclick="girarCarta(this)">
+                    <div class="front">?</div>
+                    <div class="back"><img src="" alt="card"></div>
+                </div></td>
+                <td><div id="6" class="card" onclick="girarCarta(this)">
+                    <div class="front">?</div>
+                    <div class="back"><img src="" alt="card"></div>
+                </div></td>
+                <td><div id="7" class="card" onclick="girarCarta(this)">
+                    <div class="front">?</div>
+                    <div class="back"><img src="" alt="card"></div>
+                </div></td>
+            </tr>
+            <tr>
+                <td><div id="8" class="card" onclick="girarCarta(this)">
+                    <div class="front">?</div>
+                    <div class="back"><img src="" alt="card"></div>
+                </div></td>
+                <td><div id="9" class="card" onclick="girarCarta(this)">
+                    <div class="front">?</div>
+                    <div class="back"><img src="" alt="card"></div>
+                </div></td>
+                <td><div id="10" class="card" onclick="girarCarta(this)">
+                    <div class="front">?</div>
+                    <div class="back"><img src="" alt="card"></div>
+                </div></td>
+                <td><div id="11" class="card" onclick="girarCarta(this)">
+                    <div class="front">?</div>
+                    <div class="back"><img src="" alt="card"></div>
+                </div></td>
+            </tr>
+            <tr>
+                <td><div id="12" class="card" onclick="girarCarta(this)">
+                    <div class="front">?</div>
+                    <div class="back"><img src="" alt="card"></div>
+                </div></td>
+                <td><div id="13" class="card" onclick="girarCarta(this)">
+                    <div class="front">?</div>
+                    <div class="back"><img src="" alt="card"></div>
+                </div></td>
+                <td><div id="14" class="card" onclick="girarCarta(this)">
+                    <div class="front">?</div>
+                    <div class="back"><img src="" alt="card"></div>
+                </div></td>
+                <td><div id="15" class="card" onclick="girarCarta(this)">
+                    <div class="front">?</div>
+                    <div class="back"><img src="" alt="card"></div>
+                </div></td>
+            </tr>
+        </table>
+    </template>
+
+    <div>
+        <input type="button" value="Iniciar" onclick="iniciarJuego()">    
+        <input type="button" value="Reiniciar" onclick="resetearJuego()"> 
+    </div>
+</body>
+</html>
